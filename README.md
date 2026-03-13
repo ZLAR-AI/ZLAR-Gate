@@ -233,12 +233,23 @@ The Claude Code adapter is verified — it uses the same hook format as ZLAR-CC,
 
 ## The ZLAR Family
 
+Same thesis: independent governance that does not depend on the model's cooperation. Different surfaces.
+
 | Product | Platform | What it does |
 |---------|----------|-------------|
 | **[ZLAR-OC](https://github.com/ZLAR-AI/ZLAR-OC)** | OpenClaw | OS-level containment — user isolation, kernel sandbox, pf firewall, gate daemon, signed policy, audit trail |
 | **[ZLAR-CC](https://github.com/ZLAR-AI/ClaudeCode_ZLAR-CC)** | Claude Code | Hook-based gate — tool-call interception, risk classification, signed policy, Telegram approval |
-| **ZLAR Gate** (this repo) | Claude Code + Cursor + Windsurf | Universal gate — one policy across multiple editors, framework-specific adapters |
+| **[ZLAR Gate](https://github.com/ZLAR-AI/ZLAR-Gate)** | Claude Code + Cursor + Windsurf | Universal gate — one policy across multiple editors, framework-specific adapters |
 | **[ZLAR-LT](https://github.com/ZLAR-AI/ZLAR-LT)** | Claude Code + Cursor + Windsurf | Zero-config governance — one command, instant protection, deny-heavy defaults |
+| **[ZLAR-AU](https://github.com/ZLAR-AI/ZLAR-AU)** | ZLAR Gate audit trail | Compliance reporting — hash chain verification, framework mapping, Splunk export |
+| **[ZLAR-NT](https://github.com/ZLAR-AI/ZLAR-NT)** | Cross-platform | Network egress policy — destination-aware, domain-level, gate-integrated |
+| **[ZLAR-FL](https://github.com/ZLAR-AI/ZLAR-FL)** | Cross-platform | Fleet governance — registry, health monitoring, audit aggregation, policy comparison |
+
+> **Need compliance reports?** See [ZLAR-AU](https://github.com/ZLAR-AI/ZLAR-AU) — turns the audit trail into reports your auditor can use.
+
+> **Need destination-level network policy?** See [ZLAR-NT](https://github.com/ZLAR-AI/ZLAR-NT) — checks WHERE agent network requests are going.
+
+> **Managing multiple agents?** See [ZLAR-FL](https://github.com/ZLAR-AI/ZLAR-FL) — fleet-wide governance, audit aggregation, and policy comparison.
 
 ---
 
