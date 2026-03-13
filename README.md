@@ -228,9 +228,12 @@ Zero dependencies beyond jq and openssl. No build step. No runtime. No package m
 **Why not just use the built-in permission prompts?**
 Because you'll turn them off. Everyone does. ZLAR Gate gives you the control without the friction — safe actions flow through, only the dangerous ones stop.
 
+**Are the Cursor and Windsurf adapters tested?**
+The Claude Code adapter is verified — it uses the same hook format as ZLAR-CC, which has been tested in production. The Cursor and Windsurf adapters are built from framework hook documentation and have not yet been tested against live hook payloads. If you use ZLAR Gate with Cursor or Windsurf and encounter issues with the adapter, please open an issue — your real-world payloads will help us verify and fix.
+
 ## License
 
-MIT
+[Apache License 2.0](LICENSE)
 
 ## Links
 
