@@ -231,6 +231,17 @@ Because you'll turn them off. Everyone does. ZLAR Gate gives you the control wit
 **Are the Cursor and Windsurf adapters tested?**
 The Claude Code adapter is verified — it uses the same hook format as ZLAR-CC, which has been tested in production. The Cursor and Windsurf adapters are built from framework hook documentation and have not yet been tested against live hook payloads. If you use ZLAR Gate with Cursor or Windsurf and encounter issues with the adapter, please open an issue — your real-world payloads will help us verify and fix.
 
+## The ZLAR Family
+
+| Product | Platform | What it does |
+|---------|----------|-------------|
+| **[ZLAR-OC](https://github.com/ZLAR-AI/ZLAR-OC)** | OpenClaw | OS-level containment — user isolation, kernel sandbox, pf firewall, gate daemon, signed policy, audit trail |
+| **[ZLAR-CC](https://github.com/ZLAR-AI/ClaudeCode_ZLAR-CC)** | Claude Code | Hook-based gate — tool-call interception, risk classification, signed policy, Telegram approval |
+| **ZLAR Gate** (this repo) | Claude Code + Cursor + Windsurf | Universal gate — one policy across multiple editors, framework-specific adapters |
+| **[ZLAR-LT](https://github.com/ZLAR-AI/ZLAR-LT)** | Claude Code + Cursor + Windsurf | Zero-config governance — one command, instant protection, deny-heavy defaults |
+
+---
+
 ## License
 
 [Apache License 2.0](LICENSE)
