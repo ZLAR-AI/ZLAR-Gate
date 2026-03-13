@@ -28,7 +28,7 @@ Each adapter is a thin translator (~80 lines) between a framework's hook protoco
 
 ### Core Gate (`bin/zlar-gate`)
 
-857-line bash script. Reads JSON on stdin, classifies tool call into domain, evaluates against Ed25519-signed JSON policy, routes action (allow/deny/ask/log), writes hash-chained JSONL audit trail. Uses jq throughout.
+~1000-line bash script. Reads JSON on stdin, classifies tool call into domain, evaluates against Ed25519-signed JSON policy, routes action (allow/deny/ask/log), writes hash-chained JSONL audit trail. Uses jq throughout.
 
 ### Policy CLI (`bin/zlar-policy`)
 
